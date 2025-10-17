@@ -1,5 +1,6 @@
 # 💫 About Me:
 Hi there! 👋 I’m Vivaan Sihmar, a B.Tech student in Information Technology with a strong passion for Data Science, Machine Learning, and AI-driven solutions.<br><br>🔹 Currently pursuing my B.Tech in IT from Maharaja Agrasen Institute of Technology.<br>🔹 Completed an internship at DRDO (INMAS)<br>🔹 Worked on projects involving  data science and machine learning .<br>🔹 Exploring innovative applications of ML & Data Science to solve real-world problems.<br><br>
+my portfolio -> ( https://vivaansihmar.github.io/Vivaansihmar )<br><br>
 
 
 ## 🌐 Socials:
