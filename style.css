@@ -375,6 +375,7 @@ footer {
   color: var(--bg-primary);
   border-top: 3px solid var(--teal);
 }
+
 #internships .btn-outline,
 #projects .btn-outline,
 #achievements .btn-outline,
@@ -401,55 +402,55 @@ footer {
 }
 
 #projects .btn-outline {
-  border: 2px solid #007bff;
-  color: #007bff;
+  border: 2px solid #00bfa6;
+  color: #00bfa6;
 }
 #projects .btn-outline:hover {
-  background: #1f89faff;
+  background: #00bfa6;
   color: #fff;
-  box-shadow: 0 0 10px #007bff;
+  box-shadow: 0 0 10px #00bfa6;
 }
 
 #achievements .btn-outline {
-  border: 2px solid #ff7f50;
-  color: #ff7f50;
+  border: 2px solid #00bfa6;
+  color: #00bfa6;
 }
 #achievements .btn-outline:hover {
-  background: #ff7f50;
+  background: #00bfa6;
   color: #fff;
-  box-shadow: 0 0 10px #ff7f50;
+  box-shadow: 0 0 10px #00bfa6;
 }
 
 #certificates .btn-outline {
-  border: 2px solid #9c27b0;
-  color: #9c27b0;
+  border: 2px solid #00bfa6;
+  color: #00bfa6;
 }
 #certificates .btn-outline:hover {
-  background: #9c27b0;
+  background: #00bfa6;
   color: #fff;
-  box-shadow: 0 0 10px #9c27b0;
+  box-shadow: 0 0 10px #00bfa6;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+#projects .content-grid,
+#certificates .cert-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#projects .project-card,
+#certificates .cert-card {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+@media (max-width: 1024px) {
+  #projects .project-card,
+  #certificates .cert-card {
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
@@ -465,51 +466,3 @@ footer {
     font-size: 1.2rem;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .btn {
-    justify-content: center;
-  }
-
-  .section {
-    padding: 60px 20px;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cert-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  nav {
-    padding: 15px 20px;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-}
